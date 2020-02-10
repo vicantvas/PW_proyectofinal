@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UTM New Notice</title>
+      <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='nvic.css'/>
+    <script src="time.js"></script>
+</head>
+<body class="login" >
+<div class="principal">
+    <div class="encabezado">
+        <div class="encabezado-contenido">
+            <a href="todo.php" class="titulo" style="text-decoration:none;color:#fff;">
+                <img class='imagen' src="logo.png" width="50" height="50"> 
+                <h1>NVIC</h1>            
+            </a>
+            <div class="date">
+                <div id="fecha"></div>  
+                <div id="reloj"></div> 
+            </div>
+            <div class="globo">
+                <span class="glyphicon glyphicon-globe"></span>
+            </div>
+        </div>
+    </div>
+    <nav class="menu navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="cerrarsesion.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div></div>
+    <div class="container centro">
+        <form action="nuevanoticia.php" enctype="multipart/form-data" method="post" class="formulario">
+            <div class="form-group radios">
+                <label for="usr">Titulo</label>
+                <input type="text" class="form-control" id="usr" name="titulo">
+            </div>
+            <div class="form-group">
+                <input class="btn radios" type="file" name="image" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="comment">Contenido:</label>
+                <textarea class="form-control" rows="15" id="comment" name="contenido"></textarea>
+            </div> 
+            <div class="centro radios">
+                <label class="radio-inline"><input checked type="radio" name="seccion" value="Deportes" >Deportes</label>
+                <label class="radio-inline"><input type="radio" name="seccion" value="Politica">Politica</label>
+                <label class="radio-inline"><input type="radio" name="seccion" value="Cultura">Cultura</label>                 
+            </div>
+            <div class="form-group centro">
+                <button type="submit" class="btn radios" style="font-family:'Oswald', sans-serif;font-size:x-large;">Registrar Noticia</button>
+            </div>         
+        </form>
+    </div>
+    <div class="pie2" style="margin-top:100px;">
+        <p>UTM Breaking News&#174; es una marca registrada por Victor, inc. S.A. de C.V. y/o una de sus empresas filiales. Todos los derechos reservados.</p>
+        <p>&#169;2020 Vasquez Tejada Victor Antonio. Huajuapan de León, Oaxaca.</p>
+    </div>
+</div>
+</body>
+</html>

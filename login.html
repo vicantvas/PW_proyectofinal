@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UTM breaking news</title>
+      <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='nvic.css'/>
+    <link rel="stylesheet" href="card.css"/>
+    <script src="time.js"></script>
+</head>
+<body class="login" >
+<div class="principal">
+    <div class="encabezado">
+        <div class="encabezado-contenido">
+            <a href="todo.php" class="titulo" style="text-decoration:none;color:#fff;">
+                <img class='imagen' src="logo.png" width="50" height="50"> 
+                <h1>NVIC</h1>            
+            </a>
+            <div class="date">
+                <div id="fecha"></div>  
+                <div id="reloj"></div> 
+            </div>
+            <div class="globo">
+                <span class="glyphicon glyphicon-globe"></span>
+            </div>
+        </div>
+    </div>
+    <div></div>
+<div class="container centro">
+    <div class="card card-default" style="margin-top:300px;width:350px;">
+        <div class="card-header">
+            <h3 class="card-title">Log in</h3>
+        </div>
+        <div class="card-body card-6-6">
+                    <form action="login.php" method="post">
+                        <div class="input-group" >
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input class="form-control" type="email" name="mail" placeholder="Email"/>
+                        </div>
+                        <div class="input-group form-group" style="margin-top:20px;">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input class="form-control" type="password" name="pass" placeholder="Password"/>
+                        </div>
+                        <div class="input-group form-group">
+                            <input class="btn btn-outline-secondary" type="submit" value="Ingresar" />
+                        </div>
+                    </form>
+    				
+    	</div>
+    	<div class="card-footer"><p>Don't have an account? </p><a href="signup.html">Sign Up</a></div>
+    </div>
+</div>
+    <div class="pie2" style="margin-top:300px;">
+        <p>UTM Breaking News&#174; es una marca registrada por Victor, inc. S.A. de C.V. y/o una de sus empresas filiales. Todos los derechos reservados.</p>
+        <p>&#169;2020 Vasquez Tejada Victor Antonio. Huajuapan de León, Oaxaca.</p>
+    </div>
+</div>
+</body>
+</html>
